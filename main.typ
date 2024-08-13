@@ -1,5 +1,5 @@
-#import "@preview/touying:0.4.2": *
-#import "@preview/cetz:0.2.2": *
+#import "@preview/touying:0.4.2":  *
+#import "@preview/cetz:0.2.2":  *
 
 
 
@@ -46,7 +46,7 @@
     stroke: none,
     table.hline(),
     table.header(
-      [*符号*],[*说明*]
+      [ dot 符号 dot ],[ dot 说明 dot ]
     ),
     table.hline(),
     v(0.2em),v(0.2em),
@@ -70,12 +70,12 @@
   - 锚链的作用力$F_锚 $，其与水平方向的夹角设为 $beta$ 。
   - 系统的总重力$M g$，其中$M$为系统的总质量，$g$为重力加速度。
   整个系统在静止状态下受力平衡，即：
-  $ 0.625 times (2-h) v^2 - F_锚 cos beta = 0 $
-  $ rho g (pi h) - F_锚 sin beta - M g = 0 $
+  $ 0.625 times 2(2-h) v^2 - F_锚 cos beta = 0 $
+  $ rho g (pi h + V_没) - F_锚 sin beta - M g = 0 $
 ][
 #figure(
   canvas(length: 1.5cm,{
-  import draw: *
+  import draw:  *
   circle((0,0),radius: 0.1,fill: black)
   // content((-1.2,0.3),[系统整体])
 
@@ -104,16 +104,16 @@
 #grid(align: (left+top,center+horizon), columns: (75%,20%), gutter: 1em)[
   对于浮标，其受到的外力如 @受力分析2 所示。分别是：
 
-  - 风对系统的作用力$F_风 = 0.625 times S v^2$，与上文整个系统收到的浮力相同。
+  - 风对系统的作用力$F_风 = 0.625 times S v^2$，与上文整个系统收到的风力相同。
   - 钢管对浮标的作用力$F_管 $，其与水平方向的夹角设为 $beta$ 。
   - 系统的总重力$M g$，其中$M$为系统的总质量，$g$为重力加速度。
   整个系统在静止状态下受力平衡，即：
-  $ 0.625 times (2-h) v^2 - F_管 cos gamma = 0 $
-  $ rho g (pi h + V_没) - F_管 sin gamma - M g = 0 $
+  $ 0.625 times 2(2-h) v^2 - F_管 cos gamma = 0 $
+  $ rho g (pi h) - F_管 sin gamma - m_标 g = 0 $
 ][
 #figure(
   canvas(length: 1.5cm,{
-  import draw: *
+  import draw:  *
   circle((0,0),radius: 0.1,fill: black)
   // content((-1.2,0.3),[系统整体])
 
@@ -127,7 +127,7 @@
   
   line((0,0),(90deg,-2))
   mark((0,0),(90deg,-2), symbol: "stealth", scale: 1, fill: black)
-  content((90deg,-2.5),[$m_桶 g$])
+  content((90deg,-2.5),[$m_标 g$])
 
   line((0,0),(90deg,2))
   mark((0,0),(90deg,2), symbol: "stealth", scale: 1, fill: black)
@@ -155,7 +155,7 @@
 ][
 #figure(
   canvas(length: 1.5cm,{
-  import draw: *
+  import draw:  *
   circle((0,0),radius: 0.1,fill: black)
   // content((-1.2,0.3),[系统整体])
 
@@ -181,10 +181,6 @@
 
 == 求解方程组
 
-联立$(1) ~ (6)$,得：
-
-$$
-
 其中，各常数的值如下： 
 #align(center)[
 #table(align: center+horizon, 
@@ -197,3 +193,7 @@ $$
   [海水密度$rho$],[$"kg" \/ m^3$],[$1025$],
   [重物球质量$M_球$],[$"kg"$],[1200]
 )]
+
+
+
+
