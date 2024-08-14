@@ -187,7 +187,7 @@
 #align(center)[
 #table(align: center+horizon, 
   columns: (20%,auto,60%), gutter: 1em,
-  stroke: none,
+  stroke: 2pt,
   [总质量$M$],[$"kg"$],[$1140 + M_链 + M_球 $],
   [$m_没$],[$"kg"$],[$140 + M_链 + M_球 $],
   [$V_没$],[$m^3$],[$0.025 pi + V_链 + V_球 $],
