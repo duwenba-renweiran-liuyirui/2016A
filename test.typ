@@ -63,7 +63,7 @@
  
  受力分析图如 @figB 所示。
  #figure(
-  image("联想截图_20240814103415.png", width: 80%),
+  image("./img/联想截图_20240814103415.png", width: 80%),
   caption: [浮标受力分析],
 ) <figB>
 
@@ -78,7 +78,7 @@ $ cases(T_1 cos theta_1 = F_text("风") ,F_text("浮")= G_text("浮标")+T_1 sin
 
 受力分析图如@figC 所示。
 #figure(
-  image("联想截图_20240814103435.png", width: 80%),
+  image("./img/联想截图_20240814103435.png", width: 80%),
   caption: [第一节钢管受力分析],
 ) <figC>
 经过受力分析，可得出以下方程。
@@ -88,7 +88,7 @@ $ cases(T_1 cos theta_1=T_2 cos theta_2,F_text("浮1")+T_1 sin theta_1=G_text("�
 
 在对钢管上的力进行分析的基础上，进一步对其力矩进行分析，分别以钢管上的1，2两点作为节点研究力矩。受力分析图如@figD 所示。
 #figure(
-  image("联想截图_20240814103452.png", width: 80%),
+  image("./img/联想截图_20240814103452.png", width: 80%),
   caption: [第一节钢管力矩分析],
 ) <figD>
 经过分析，可得出以下方程。
